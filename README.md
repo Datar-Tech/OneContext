@@ -2,7 +2,8 @@
  OneContext is an Agent Self-Managed Context layer, it gives your team a ***unified context for ALL AI Agents***, so anyone, any agent can pick up from the same context.
 
  ## Quick Install
- ```npm i -g onecontext-ai```
+ Install: ```npm i -g onecontext-ai```
+ Then run: ```onecontext```
 
 ## Key Features
 1. Run your Agents with OneContext and it records your Agents trajectory.
