@@ -1,0 +1,38 @@
+{
+  "name": "onecontext-ai",
+  "version": "0.8.3",
+  "description": "OneContext AI - npm wrapper for the aline-ai Python package",
+  "bin": {
+    "onecontext-ai": "./bin/default.js",
+    "onecontext": "./bin/onecontext.js",
+    "oc": "./bin/oc.js"
+  },
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "bin/",
+    "postinstall.js",
+    "run.js",
+    "README.md"
+  ],
+  "keywords": [
+    "onecontext",
+    "aline",
+    "ai",
+    "cli"
+  ],
+  "license": "MIT",
+  "homepage": "https://one-context.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheAgentContextLab/OneContext",
+    "directory": "npm"
+  },
+  "bugs": {
+    "url": "https://github.com/TheAgentContextLab/OneContext/issues"
+  }
+}

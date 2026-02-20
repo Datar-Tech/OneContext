@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aline-ai"
+version = "0.8.3"
+description = "Shared AI memory; everyone knows everything in teams"
+readme = {text = "OneContext - Agent Self-Managed Context Layer. See https://github.com/TheAgentContextLab/OneContext for details.", content-type = "text/plain"}
+license = "MIT"
+requires-python = ">=3.11"
+authors = [
+    { name = "Sharemind" },
+]
+keywords = [
+    "ai", "agent", "chat", "history", "mcp",
+    "claude", "session-tracking", "context-preservation",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "typer>=0.9.0",
+    "pyyaml>=6.0",
+    "rich>=13.0.0",
+    "anthropic>=0.18.0",
+    "openai>=1.0.0",
+    "detect-secrets>=1.4.0",
+    "git-filter-repo>=2.38.0",
+    "cryptography>=41.0.0",
+    "httpx>=0.24.0",
+    "scikit-learn>=1.3.0",
+    "numpy>=1.24.0",
+    "textual>=0.50.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+    "bump-my-version>=0.26.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/TheAgentContextLab/OneContext"
+Repository = "https://github.com/TheAgentContextLab/OneContext"
+Documentation = "https://github.com/TheAgentContextLab/OneContext#readme"
+"Bug Tracker" = "https://github.com/TheAgentContextLab/OneContext/issues"
+
+[project.scripts]
+aline = "realign.cli:app"
+oc = "realign.cli:app"
+onecontext = "realign.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["realign*"]
+
+[tool.setuptools.package-data]
+realign = ["dashboard/styles/*.tcss"]
