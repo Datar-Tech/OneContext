@@ -102,6 +102,13 @@ If the commands aren't found after installation:
 2. Rebuild wrapper links if needed: `npm rebuild onecontext-ai`
 3. Check that `onecontext` is on your PATH: `which onecontext`
 
+## Original Source
+
+This repo consolidates source code from the following original packages:
+- **npm**: [`onecontext-ai`](https://www.npmjs.com/package/onecontext-ai) — Node.js CLI wrapper
+- **PyPI**: [`aline-ai`](https://pypi.org/project/aline-ai/) — Python core package (internal module name: `realign`)
+- **Original repo**: [TheAgentContextLab/OneContext](https://github.com/TheAgentContextLab/OneContext) — documentation only
+
 ## Issue & Feedback
 Feel free to raise an issue ticket for any problems you encounter, or for any features or improvements you'd like to see in the future 🙂
 
